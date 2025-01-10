@@ -4,7 +4,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion"; // Import framer motion
 import Timer from "./Timer";
 import About from "./About";
-import Committee from "./Leaders";
+import Committee from "./Committee";
 
 export default function Page() {
   // State to manage the background image
