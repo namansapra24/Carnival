@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion"; // Import framer motion
+import final2 from "/img/final2.png";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -69,7 +70,7 @@ export default function About() {
         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }} // Delayed animation for image
       >
         <img
-          src="/img/final2.png" // Replace with your image path
+          src={final2} // Replace with your image path
           alt="Rotary District Conference"
           className="w-full h-auto rounded-lg"
         />

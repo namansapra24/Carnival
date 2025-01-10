@@ -6,6 +6,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons"; // For the phone icon
+import final from "/img/final.png"
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
             {/* Logo */}
             <a href="#home">
               <img
-                src="/img/final.png" // Replace with your logo's actual path
+                src={final} // Replace with your logo's actual path
                 alt="Logo"
                 className="h-32 w-32 mb-4 cursor-pointer"
               />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll"; // Import react-scroll's Link component
+import final from "/img/final.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ export default function Navbar() {
         >
           <a href="#home">
             <img
-              src="/img/final.png"
+              src={final}
               alt="Logo"
               className={`h-[8rem] ${isScrolled ? "h-12" : "h-[8rem]"}`}
             />
