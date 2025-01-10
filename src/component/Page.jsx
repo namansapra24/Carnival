@@ -5,16 +5,18 @@ import { motion } from "framer-motion"; // Import framer motion
 import Timer from "./Timer";
 import About from "./About";
 import Committee from "./Committee";
+import bg7 from "/img/bg7.jpg";
+import bg8 from "/img/bg8.jpg";
 
 export default function Page() {
   // State to manage the background image
-  const [backgroundImage, setBackgroundImage] = useState("/img/bg7.jpg");
+  const [backgroundImage, setBackgroundImage] = useState(bg7);
 
   // Change the background image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setBackgroundImage((prevImage) =>
-        prevImage === "/img/bg7.jpg" ? "/img/bg8.jpg" : "/img/bg7.jpg"
+        prevImage === bg7 ? bg8 : bg7
       );
     }, 5000);
 
