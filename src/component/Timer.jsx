@@ -69,13 +69,12 @@ export default function Timer() {
   return (
     <motion.div
       ref={timerRef} // Reference to the Timer container
-      className="flex flex-col items-center justify-center text-white bg-black bg-opacity-50 backdrop-blur-sm p-8 rounded-lg -mt-[7rem] max-w-4xl mx-auto"
+      className="flex flex-col items-center justify-center text-white bg-black bg-opacity-50 backdrop-blur-sm p-10 rounded-lg -mt-[6rem] max-w-5xl mx-auto"
       initial={{ y: 100 }} // Initial position (off-screen at the top)
       animate={{ y: isVisible ? 0 : 100 }} // Move to the top when visible
       transition={{ duration: 0.5, ease: "easeOut" }} // Smooth transition
     >
-      <h1 className="text-4xl font-bold mb-6">Countdown to January 23, 2026</h1>
-      <div className="flex space-x-4 text-6xl font-extrabold">
+      <div className="flex space-x-10 text-8xl font-extrabold">
         <div className="flex flex-col items-center">
           <span className="text-yellow-800">{timeLeft.days}</span>
           <span className="text-xl">Days</span>
